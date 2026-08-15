@@ -1,0 +1,51 @@
+// Generated for spectre
+simulator lang =spectre
+global 0
+
+include "$ADT_LUT/design.ngspice"
+include "$ADT_LUT/sm141064.ngspice" section=typical
+
+
+simulator lang =spectre
+
+parameters VGS=0.8269641541924478 VDS=0.5 VSB=0.3 MAX_VDS=3.3 MIN_VGS=0.0 MAX_VGS=3.3 IBIAS=1.0120238476751906e-05 VCVS_GAIN=1000 VCVS_MAX_VOLTAGE=2.473035845807552 VCVS_MIN_VOLTAGE=-0.8269641541924478 M10_L=4.5000000000000003e-07 M11_L=4.5000000000000003e-07 M12_L=4.5000000000000003e-07 M10_W=8.24e-06 M11_W=8.24e-06 M12_W=8.24e-06 M10_NF=2 M11_NF=2 M12_NF=2 M10_Mult=2 M11_Mult=2 M12_Mult=2
+
+subckt ADT_SA 
+VX10 VG0 0 vsource dc = VGS mag = 1
+VX20 VD0 vn vsource dc = VDS
+VX30 VS0 0 vsource dc = 0
+VX40 VB0 0 vsource dc = -1*VSB
+VX11 VG1 0 vsource dc = VGS
+VX21 VD1 0 vsource dc = VDS mag = 1
+VX31 VS1 0 vsource dc = 0
+VX41 VB1 0 vsource dc = -1*VSB
+VX12 VG2 0 vsource dc = VGS
+VX22 VD2 0 vsource dc = VDS
+VX32 VS2 0 vsource dc = 0 mag = 1
+VX42 VB2 0 vsource dc = -1*VSB
+VNOI vn 0 vsource dc = 0
+M10 VD0 VG0 VS0 VB0 nmos_03v3 L=450n W=4.12u nf=2 ad=int((2+1)/2) * 4.12u/2 * 0.18u as=int((2+2)/2) * 4.12u/2 * 0.18u pd=2*int((2+1)/2) * (4.12u/2 + 0.18u) ps=2*int((2+2)/2) * (4.12u/2 + 0.18u) nrd=0.18u / 4.12u nrs=0.18u / 4.12u sa=0 sb=0 sd=0 multi=2
+M11 VD1 VG1 VS1 VB1 nmos_03v3 L=450n W=4.12u nf=2 ad=int((2+1)/2) * 4.12u/2 * 0.18u as=int((2+2)/2) * 4.12u/2 * 0.18u pd=2*int((2+1)/2) * (4.12u/2 + 0.18u) ps=2*int((2+2)/2) * (4.12u/2 + 0.18u) nrd=0.18u / 4.12u nrs=0.18u / 4.12u sa=0 sb=0 sd=0 multi=2
+M12 VD2 VG2 VS2 VB2 nmos_03v3 L=450n W=4.12u nf=2 ad=int((2+1)/2) * 4.12u/2 * 0.18u as=int((2+2)/2) * 4.12u/2 * 0.18u pd=2*int((2+1)/2) * (4.12u/2 + 0.18u) ps=2*int((2+2)/2) * (4.12u/2 + 0.18u) nrd=0.18u / 4.12u nrs=0.18u / 4.12u sa=0 sb=0 sd=0 multi=2
+ends ADT_SA
+
+X_ADT_SA ADT_SA
+
+simulatorOptions options reltol=1e-3 vabstol=1e-8 iabstol=1e-12 temp=27.0 \
+tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+checklimitdest=psf
+
+adt_dc dc  maxiters=150 maxsteps=10000 annotate=status
+adt_ac ac values=1 annotate=status prevoppoint=yes skipdc=yes
+adt_noise noise start=10 stop=1G log=1 oprobe=X_ADT_SA.VNOI annotate=status
+
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
+save*:oppoint sigtype=dev
+
