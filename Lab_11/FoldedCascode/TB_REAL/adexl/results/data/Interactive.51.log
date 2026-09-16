@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Sep  2 16:41:10 2026 
+Best design point: 1
+Design specs: 
+	FoldedCascode:TB_REAL:1	corner	Nominal - 
+	A0		3.517k
+	BW		15.52k
+	UGF		55.07M
+	GBW		54.59M
+	PM		82.64
+Design parameters: 
+	VICM		500m
+	VICMAC		0
+	VID		0
+	VIDAC		1
+
+Interactive.51
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.51 completed. 
+Current time: Wed Sep  2 16:41:19 2026 

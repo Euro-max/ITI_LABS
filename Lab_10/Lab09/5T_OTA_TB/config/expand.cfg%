@@ -1,0 +1,20 @@
+//Revision 2
+//NOTE
+// Default template for spectre
+// Note:
+//      Please remember to replace Top Cell Library, Cell, and View
+//      fields with the actual names used by your design.
+//END_NOTE
+
+config \5T_OTA_TB ;
+design Lab_09.\5T_OTA_TB :schematic;
+liblist myLib, adtpdk45nm, analogLib, basic;
+
+viewlist spectre, cmos_sch, \cmos.sch , schematic, veriloga, ahdl, pspice;
+stoplist spectre;
+
+
+cell Lab_09.OTA_Sch binding :schematic_behav;
+
+
+endconfig

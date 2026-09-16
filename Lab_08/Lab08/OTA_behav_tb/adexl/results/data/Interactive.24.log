@@ -1,0 +1,23 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Aug 15 18:00:22 2026 
+Best design point: 1
+Design specs: 
+	Lab08:OTA_behav_tb:1	corner	Nominal - 
+Design parameters: 
+	CF		4p
+	CIN		4p
+	CL		5p
+	FIN		1.759M
+	IB		10u
+	VDDAC		1
+	VICM		1.35
+	VINAC		1
+	VP		50m
+	wu		30.76M
+
+Interactive.24
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.24 completed. 
+Current time: Sat Aug 15 18:00:28 2026 

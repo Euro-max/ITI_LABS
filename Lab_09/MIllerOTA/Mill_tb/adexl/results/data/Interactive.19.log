@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Aug 19 20:00:15 2026 
+Best design point: 1
+Design specs: 
+	MIllerOTA:Mill_tb:1	corner	Nominal - 
+	VDC("/net5")		1.758
+Design parameters: 
+	VICM		600m
+	VICMAC		1
+	VID		0
+	VIDAC		1
+
+Interactive.19
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.19 completed. 
+Current time: Wed Aug 19 20:00:22 2026 

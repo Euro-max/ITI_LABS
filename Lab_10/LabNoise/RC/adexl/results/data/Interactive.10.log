@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sat Aug 22 12:35:55 2026 
+Best design point: 1
+Design specs: 
+	LabNoise:RC:1	corner	Nominal - 
+Design parameters: 
+	CPAR		1p
+	RPAR		1k
+	TAU		1n
+	TSTOP		100n
+	TSTEP		100p
+
+Interactive.10
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.10 completed. 
+Current time: Sat Aug 22 12:36:03 2026 

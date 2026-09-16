@@ -1,0 +1,23 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Aug 31 14:26:24 2026 
+Best design point: 1
+Design specs: 
+	FoldedCascode:TB:1	corner	Nominal - 
+	dB20(mag(VF("/VODIFF")))		Error	No
+	A0		3.17k
+	BW		15.67k
+	UGF		49.66M
+	GBW		49.78M
+	PM		83.32
+Design parameters: 
+	VICM		500m
+	VICMAC		0
+	VID		0
+	VIDAC		1
+
+Interactive.24
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.24 completed. 
+Current time: Mon Aug 31 14:26:43 2026 

@@ -1,0 +1,26 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Aug 16 05:26:07 2026 
+Best design point: 1
+Design specs: 
+	Lab08:OTA_behav_tb:1	corner	Nominal - 
+	unityGainFreq(mag(getData("loopGain" ?result "stb")))		1.72M
+	ymax(dB20(getData("loopGain" ?result "stb")))		30.24
+	bandwidth(getData("loopGain" ?result "stb") 3 "low")		53.23k
+Design parameters: 
+	CF		4p
+	CIN		4p
+	CL		5p
+	FIN		1.759M
+	IB		10u
+	VDDAC		1
+	VICM		1.35
+	VINAC		1
+	VP		50m
+	wu		30.76M
+
+Interactive.27
+Number of points completed: 2
+Number of simulation errors: 0
+Interactive.27 completed. 
+Current time: Sun Aug 16 05:26:16 2026 
