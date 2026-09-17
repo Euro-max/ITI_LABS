@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Sep 17 07:18:45 2026 
+Best design point: 1
+Design specs: 
+	MyBGR:Omar_test:1	corner	TT - 
+	MyBGR:Omar_test:1	corner	FF - 
+	MyBGR:Omar_test:1	corner	SS - 
+	MyBGR:Omar_test:1	corner	SF - 
+	MyBGR:Omar_test:1	corner	FS - 
+	MyBGR:Omar_test:1	corner	Nominal - 
+Design parameters: 
+
+Interactive.79
+Number of points completed: 1
+Number of simulation errors: 2
+Interactive.79 completed. 
+Current time: Thu Sep 17 07:20:00 2026 
