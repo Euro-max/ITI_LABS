@@ -1,0 +1,3538 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">C1
+				<vars>
+					<var>VDD
+						<value>1.1,1.2,1.3</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+						<modelsection>"ff" "ss" "tt"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">LDO:Schematic:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>Schematic</value>
+					</option>
+					<option>lib
+						<value>LDO</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>LDO:Schematic:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>Schematic</value>
+					</option>
+					<option>lib
+						<value>LDO</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>Lf
+				<value>500n</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lin
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lp
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lt
+				<value>3u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDD
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vref
+				<value>0.5885</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wf
+				<value>10u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Win
+				<value>5u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wp
+				<value>6u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wt
+				<value>10u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V1
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V2
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V3
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V4
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V5
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V6
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V7
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>W
+				<value>10u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lref
+				<value>3u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Wref
+				<value>5u</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>R
+				<value>1.1262M</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>R2
+				<value>550.186k</value>
+				<dependentTests>
+					<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<models>
+			<model>crn65gplus_2d5_lk_v1d0.scs
+				<modeltest>All</modeltest>
+				<modelblock>Global</modelblock>
+			</model>
+		</models>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.57
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>VDD
+								<value>1.15,1.18,1.2,1.22,1.25</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:2
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:3
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:4
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:5
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:6
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:7
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:8
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:9
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:10
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:11
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:12
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:13
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:14
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:15
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:16
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:17
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:18
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:19
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:20
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:21
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:22
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:23
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:24
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:25
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:26
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:27
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:28
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:29
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:30
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:31
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:32
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:33
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:34
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:35
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:36
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:37
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:38
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:39
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:40
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:41
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:42
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:43
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:44
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:45
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.57</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 10:49:07 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.57.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.57.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_104907214</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.57</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.57</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.57.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.57.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.58
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>VDD
+								<value>1.15,1.18,1.2,1.22,1.25</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:2
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:3
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:4
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:5
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:6
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:7
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:8
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:9
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:10
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:11
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:12
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:13
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:14
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:15
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:16
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:17
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:18
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:19
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:20
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:21
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:22
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:23
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:24
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:25
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:26
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:27
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:28
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:29
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:30
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:31
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:32
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:33
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:34
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:35
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:36
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:37
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:38
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:39
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:40
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:41
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:42
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:43
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:44
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:45
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.58</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 11:11:01 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.58.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.58.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_111101772</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.58</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.58</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.58.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.58.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.59
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">C0
+						<vars>
+							<var>VDD
+								<value>1.15,1.18,1.2,1.22,1.25</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:2
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:3
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:4
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:5
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:6
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:7
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:8
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:9
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:10
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:11
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:12
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:13
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:14
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:15
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:16
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:17
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:18
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:19
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:20
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:21
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:22
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:23
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:24
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:25
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:26
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:27
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:28
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:29
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:30
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:31
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:32
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:33
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:34
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:35
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:36
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:37
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:38
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:39
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:40
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:41
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:42
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:43
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:44
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:45
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.59</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 11:42:51 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.59.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.59.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_114251491</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.59</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.59</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.59.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.59.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.60
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:1
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:2
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:3
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:4
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:5
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:6
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:7
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:8
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:9
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:10
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:11
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:12
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:13
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:14
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:15
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:16
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:17
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:18
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:19
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:20
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:21
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:22
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:23
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:24
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:25
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:26
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:27
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:28
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:29
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:30
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:31
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:32
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:33
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:34
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:35
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:36
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:37
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:38
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs:39
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:40
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:41
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:42
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:43
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:44
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="0">crn65gplus_2d5_lk_v1d0.scs:45
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.60</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 11:54:57 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.60.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.60.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_115457700</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.60</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.60</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.60.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.60.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.61
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<models>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection>"ff" "ss" "tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.61</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<models>
+					<model>crn65gplus_2d5_lk_v1d0.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 11:59:26 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.61.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.61.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_115927024</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.61</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.61</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.61.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.61.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.62
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<vars>
+							<var>temperature
+								<value>0 25 50 75 100</value>
+							</var>
+							<var>VDD
+								<value>1.1,1.2,1.3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection>"ff" "ss" "tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.62</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<models>
+					<model>crn65gplus_2d5_lk_v1d0.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 12:00:54 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.62.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.62.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_120054077</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.62</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.62</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.62.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.62.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.63
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<vars>
+							<var>VDD
+								<value>1.1,1.2,1.3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection>"ff" "ss" "tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.63</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<models>
+					<model>crn65gplus_2d5_lk_v1d0.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 12:04:08 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.63.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.63.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_120408887</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.63</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.63</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.63.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.63.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.64
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<vars>
+							<var>VDD
+								<value>1.1,1.2,1.3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection>"ff" "ss" "tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.64</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<models>
+					<model>crn65gplus_2d5_lk_v1d0.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Wed Dec 24 12:04:21 2025</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.64.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.64.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_120421335</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.64</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.64</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.64.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.64.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.65
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<vars>
+							<var>VDD
+								<value>1.1,1.2,1.3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection>"ff" "ss" "tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.65</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<models>
+					<model>crn65gplus_2d5_lk_v1d0.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Sep  6 12:40:47 2026
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.65.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.65.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_124047670</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.65</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.65</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.65.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.65.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.66
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C1
+						<vars>
+							<var>VDD
+								<value>1.1,1.2,1.3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn65gplus_2d5_lk_v1d0.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/home/cadence/tsmc65nm/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs</modelfile>
+								<modelsection>"ff" "ss" "tt"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">LDO:Schematic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>LDO:Schematic:1_none_Interactive.66</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Schematic</value>
+							</option>
+							<option>lib
+								<value>LDO</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Lf
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lin
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lp
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lt
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vref
+						<value>0.5885</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wf
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Win
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wp
+						<value>6u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wt
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lref
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Wref
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R
+						<value>1.1262M</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R2
+						<value>550.186k</value>
+						<dependentTests>
+							<dependentTest omitted="0">LDO:Schematic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<models>
+					<model>crn65gplus_2d5_lk_v1d0.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Sep  6 12:48:29 2026
+</timestamp>
+			<resultsname>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.66.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.66.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_124829666</localpsfdir>
+			<psfdir>/home/cadence/simulation/LDO/Schematic/adexl/results/data/Interactive.66</psfdir>
+			<simdir>$AXL_PROJECT_DIR/LDO/Schematic/adexl/results/data/Interactive.66</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cadence/tsmc65nm/LDO/Schematic/adexl/results/data/Interactive.66.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.66.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

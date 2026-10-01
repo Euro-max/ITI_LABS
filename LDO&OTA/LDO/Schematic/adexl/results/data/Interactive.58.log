@@ -1,0 +1,37 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Wed Dec 24 11:11:02 2025 
+Best design point: 1
+Design specs: 
+	LDO:Schematic:1	corner	C0_0 - 
+	LDO:Schematic:1	corner	C0_1 - 
+	LDO:Schematic:1	corner	C0_2 - 
+	LDO:Schematic:1	corner	C0_3 - 
+	LDO:Schematic:1	corner	C0_4 - 
+Design parameters: 
+	Lf		500n
+	Lin		2u
+	Lp		2u
+	Lt		3u
+	VDD		1.15
+	Vref		588.5m
+	Wf		10u
+	Win		5u
+	Wp		6u
+	Wt		10u
+	V1		1.2
+	V2		0
+	V3		0
+	V4		0
+	V5		0
+	V6		0
+	V7		0
+	W		10u
+	Lref		3u
+	Wref		5u
+
+Interactive.58
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.58 completed. 
+Current time: Wed Dec 24 11:11:25 2025 
